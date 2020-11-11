@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { css } from "emotion";
+import { Counter_test} from "./component/Counter";
+const style_base: string = css({
+  textAlign: "left",
+  width: "80%",
+  margin: "auto",
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={style_base}>
+      <h1>このプログラムは、テスト用です‼</h1>
+      <Counter_test />
     </div>
   );
 }
