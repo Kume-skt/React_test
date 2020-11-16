@@ -6,10 +6,12 @@ export function Animation() {
 
   const color = isFlag ? "red" : "blue";
   const size = isFlag ? "100px" : "300px";
+  const textcolor = isFlag ? "Black" : "White";
   const animation_style = css({
     width: size,
     backgroundColor: color,
     transition: "1s",
+    color: textcolor,
   });
   return (
     <div className={animation_style}>
