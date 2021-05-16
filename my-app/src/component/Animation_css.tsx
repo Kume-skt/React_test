@@ -11,7 +11,8 @@ export function Animation() {
     width: size,
     backgroundColor: color,
     transition: "1s",
-    color: textcolor,
+      color: textcolor,
+    textAlign:"center"
   });
   return (
     <div className={animation_style}>
